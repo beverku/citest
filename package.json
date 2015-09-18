@@ -4,11 +4,24 @@
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+	"ci-test": "tape \"test/**/*.js\" > test.tap"
   },
   "dependencies": {
     "express": "^4.13.3"
   },
+  "devDependencies": {
+ 	"chai": "^3.2.0",
+ 	"dotenv": "^1.2.0",
+ 	"istanbul": "^0.3.18",
+ 	"mocha": "^2.2.5",
+ 	"request": "^2.58.0",
+ 	"should": "^5.2.0",
+ 	"supertest": "^0.15.0",
+ 	"tape": "^4.2.0",
+ 	"z-schema": "^3.12.0"
+   },
+
   "engines": {
     "node": "4.0.0"
   },
