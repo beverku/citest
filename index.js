@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
 	var result = '';
 	var times = process.env.TIMES || 5;
 	for(i=0; i < times; i++) {
-		result += "Hello Galaxy - " + i + "<br>";
+		result += "Hello Boulder - " + i + "<br>";
 	}
   response.send(result);
 })
